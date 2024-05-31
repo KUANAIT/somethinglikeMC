@@ -105,7 +105,7 @@ class Game(Entity):
                   texture=selected_block, scale=0.5,
                   rotation=Vec3(150, -10, 0), position=Vec2(0.5, -0.6))
 
-    # dig sound
+    # block creating and removing sound
     sound = Audio('Stone_dig1.ogg', loop=False, autoplay=False)
 
     # block placement and removal
@@ -147,7 +147,7 @@ class Game(Entity):
       destroy(box)
     self.boxes.clear()
 
-# npc(its has a cube)
+# npc(its has a cube(changes speed randomly))
 class NPC(Entity):
   def __init__(self, **kwargs):
     super().__init__()
