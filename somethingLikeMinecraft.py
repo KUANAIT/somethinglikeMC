@@ -24,7 +24,7 @@ class MainMenu(Entity):
   def quit_game(self):
     application.quit()
 
-music = Audio('ghostrunner_2020_19_Air.mp3', loop=True, volume=0.3)
+music = Audio('Sunday Rain - Cheel.mp3', loop=True, volume=0.3)
 music.play()
 
 
